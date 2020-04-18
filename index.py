@@ -51,7 +51,6 @@ for AB in range(workers['AB'][2]+1):
     for BB in range(int(BoxcutterTime/workers['BB'][0])+1):
         BoxcutterTime2=int(BoxcutterTime-workers['BB'][3][BB])
         if  BoxcutterTime2<0 or GTime<0:
-            exit()
             continue
         
         CB=int(BoxcutterTime2/workers['CB'][0])
